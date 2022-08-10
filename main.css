@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --ftr-bg: hsl(243, 87%, 12%);
+  --sect-bg: hsl(238, 22%, 44%);
+  --btn-bg: hsl(224, 93%, 58%);
+  --lnk-clr: hsl(170, 45%, 43%);
+  --ftr-clr: hsl(240, 75%, 98%);
+  --prgph-cl: hsl(0, 0%, 75%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+button,
+.cnt-intro a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  background: url(images/bg-curve-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 30px 40px;
+}
+
+/* 
+  ===============
+  primary header
+  ===============
+*/
+#pmr-hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pmr-hdr img {
+  display: block;
+  width: 30%;
+}
+
+/*
+  ===================
+  sections
+  ===================
+*/
+
+#hero img,
+#cnt-intro > img {
+  width: 100%;
+}
+
+#hero p,
+#cnt-intro p {
+  color: var(--ftr-bg);
+  opacity: 0.8;
+}
+
+#cnt-intro p:last-of-type {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#cnt-intro p a {
+  color: var(--lnk-clr);
+  border-bottom: 2px solid var(--lnk-clr);
+  padding: 6px 0;
+}
+
+#cnt-intro p a:hover {
+  opacity: 0.7;
+}
+
+#cnt-intro .testimonial {
+  background: white;
+  padding: 20px;
+  margin: 40px 20px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#cnt-intro .testimonial p {
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+
+#cnt-intro .testimonial h4 {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+#cnt-intro .testimonial h4 span {
+  color: var(--ftr-bg);
+  opacity: 0.8;
+  font-weight: 400;
+}
+
+#cnt-intro .testimonial img {
+  width: 32px;
+  border-radius: 16px;
+}
+
+#cnt-intro .testimonial img:last-of-type {
+  float: left;
+  margin: 10px 10px 0 0;
+}
+
+#register {
+  background: var(--sect-bg);
+  color: var(--ftr-clr);
+}
+
+/* 
+  ====================
+  input & button
+  ====================
+*/
+input,
+button {
+  display: inline-block;
+  margin: 20px auto;
+  padding: 16px;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+#hero input {
+  border: 2px solid var(--ftr-bg);
+}
+
+button {
+  background: var(--btn-bg);
+  color: var(--ftr-clr);
+  font-weight: 700;
+  padding: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 36px 18px -20px rgba(0, 0, 0, 0.8);
+  transform: translateY(-10px);
+}
+
+/* 
+  ====================
+  links
+  ====================
+*/
+a {
+  text-decoration: none;
+  color: var(--ftr-clr);
+}
+
+a:hover {
+  color: var(--lnk-clr);
+}
+
+/* 
+  ===================
+  navigation
+  ===================
+*/
+.nav-bar {
+  text-align: right;
+  font-weight: 700;
+}
+
+.nav-bar ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.nav-bar ul li a {
+  color: var(--sect-bg);
+}
+
+.nav-bar ul li a:hover {
+  color: var(--lnk-clr);
+}
+
+/* 
+  ===================
+  primary footer
+  ===================
+*/
+#pmr-ftr {
+  background: var(--ftr-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--ftr-clr);
+}
+
+#pmr-ftr > * {
+  margin-bottom: 20px;
+}
+
+#pmr-ftr .contact img {
+  width: 50%;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#pmr-ftr .contact a {
+  display: block;
+}
+
+#pmr-ftr .contact a .fas {
+  width: 30px;
+}
+
+#pmr-ftr .social-icons {
+  text-align: center;
+}
+
+#pmr-ftr .social-icons .fab {
+  border: 2px solid var(--ftr-clr);
+  border-radius: 50%;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#pmr-ftr .social-icons .fab:hover {
+  color: var(--lnk-clr);
+  border-color: inherit;
+  transform: scale(1.3);
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  body {
+    font-size: 22px;
+  }
+
+  input,
+  button {
+    width: 45%;
+    margin: 10px;
+  }
+
+  #pmr-ftr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #pmr-ftr .social-icons {
+    justify-self: start;
+  }
+
+  #pmr-ftr .social-icons .fab {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 960px) {
+  body {
+    background: url(images/bg-curve-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .container {
+    padding: 60px 80px;
+  }
+
+  .container h1,
+  h2,
+  h3,
+  h4,
+  p {
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  #pmr-hdr img {
+    width: 20%;
+  }
+
+  .nav-bar ul li {
+    margin-left: 40px;
+  }
+
+  #hero {
+    clear: both;
+    *zoom: 1;
+    margin-bottom: 40px;
+  }
+
+  #hero::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #hero img,
+  #cnt-intro > img {
+    float: right;
+    width: 45%;
+    margin-left: 20px;
+  }
+
+  input {
+    width: 28%;
+  }
+
+  button {
+    width: 18%;
+    margin-left: 10px;
+  }
+
+  #cnt-intro {
+    clear: both;
+    *zoom: 1;
+  }
+
+  #cnt-intro::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  #cnt-intro p:last-of-type {
+    text-align: left;
+  }
+
+  #cnt-intro .testimonial {
+    width: 40%;
+    margin: 40px 0 0 0;
+  }
+
+  #register div {
+    display: inline-block;
+    width: 45%;
+  }
+
+  #register div:last-of-type {
+    margin-left: 50px;
+  }
+
+  #register input {
+    width: 100%;
+  }
+
+  #register button {
+    width: 70%;
+    margin: 0;
+  }
+
+  #pmr-ftr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  #pmr-ftr .contact img {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+}

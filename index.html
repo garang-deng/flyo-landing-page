@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <script
+      src="https://kit.fontawesome.com/07db29525e.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link for FontAwesome Icons -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+    <!-- link to CSS -->
+
+    <title>Frontend Mentor | Fylo landing page with two column layout</title>
+  </head>
+  <body>
+    <main>
+      <header id="pmr-hdr" class="container">
+        <img src="images/logo.svg" alt="Main logo" />
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="#hero">Features</a></li
+            ><!--
+            --><li><a href="#cnt-intro">Team</a></li
+            ><!--
+            --><li><a href="#register">Sign In</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="hero" class="container">
+        <img
+          src="images/illustration-1.svg"
+          alt="A man and a woman storing their files in the cloud"
+        />
+        <h1>All your files in one secure location, accessible anywhere.</h1>
+        <p
+          >Fylo stores your most important files in one secure location. Access
+          them wherever you need, share and collaborate with friends, family,
+          and co-workers.</p
+        >
+        <label for="personal-email">
+          <input
+            type="email"
+            name="email"
+            id="personal-email"
+            placeholder="Enter your email..."
+          />
+        </label>
+        <button>Get Started</button>
+      </section>
+      <section id="cnt-intro" class="container">
+        <img
+          src="images/illustration-2.svg"
+          alt="2 men and a woman accessing their file in the cloud"
+        />
+        <h2>Stay productive, wherever you are</h2>
+        <p
+          >Never let location be an issue when accessing your files. Fylo has
+          you covered for all of your file storage needs.</p
+        >
+        <p
+          >Securely share files and folders with friends, family and colleagues
+          for live collaboration. No email attachments required!</p
+        >
+        <p
+          ><a href="#"
+            >See how Fylo works
+            <i class="fa-solid fas fa-arrow-alt-circle-right"></i></a
+        ></p>
+        <div class="testimonial">
+          <img src="images/icon-quotes.svg" alt="Quotes icon" />
+          <p
+            >Fylo has improved our team productivity by an order of magnitude.
+            Since making the switch our team has become a well-oiled
+            collaboration machine.</p
+          >
+          <img src="images/avatar-testimonial.jpg" alt="Kyle's avator image" />
+          <h4>Kyle Burton<br /><span>Founder & CEO, Huddle</span></h4>
+        </div>
+      </section>
+      <section id="register" class="container">
+        <div>
+          <h3>Get early access today</h3>
+          <p
+            >It only takes a minute to sign up and our free starter tier is
+            extremely generous. If you have any questions, our support team
+            would be happy to help you.</p
+          >
+        </div>
+        <div>
+          <label for="email">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@example.com"
+            />
+          </label>
+          <button>Get Started For Free</button>
+        </div>
+      </section>
+      <footer id="pmr-ftr" class="container">
+        <div class="contact">
+          <img src="images/logo-white.svg" alt="Main logo" />
+          <a href="#"
+            ><i class="fa-solid fas fas fas fa-phone"></i> Phone:
+            +1-543-123-4567</a
+          >
+          <a href="#"
+            ><i class="fa-solid fas far fas fa-envelope"></i>
+            example@fylo.com</a
+          >
+        </div>
+        <div class="address">
+          <p><a href="#">About Us</a></p>
+          <p><a href="#">Jobs</a></p>
+          <p><a href="#">Press</a></p>
+          <p><a href="#">Blog</a></p>
+        </div>
+        <div class="guidelines">
+          <p><a href="#">Contact Us</a></p>
+          <p><a href="#">Terms</a></p>
+          <p><a href="#">Privacy</a></p>
+        </div>
+        <div class="social-icons"
+          ><i class="fa-brand fab fa-facebook-f"></i>
+          <i class="fa-brand fab fa-twitter"></i>
+          <i class="fa-brand fab fa-instagram"></i>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
