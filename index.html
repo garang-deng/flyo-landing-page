@@ -26,7 +26,7 @@
   <body>
     <main>
       <header id="pmr-hdr" class="container">
-        <img src="images/logo.svg" alt="Main logo" />
+        <img src="images/logo.svg" alt="Fylo logo" />
         <nav class="nav-bar">
           <ul>
             <li><a href="#hero">Features</a></li
@@ -48,15 +48,17 @@
           them wherever you need, share and collaborate with friends, family,
           and co-workers.</p
         >
-        <label for="personal-email">
-          <input
-            type="email"
-            name="email"
-            id="personal-email"
-            placeholder="Enter your email..."
-          />
-        </label>
-        <button>Get Started</button>
+        <form action="" id="form-1">
+          <label for="personal-email">
+            <input
+              type="email"
+              name="email"
+              id="personal-email"
+              placeholder="Enter your email..."
+            />
+          </label>
+          <button type="button">Get Started</button>
+        </form>
       </section>
       <section id="cnt-intro" class="container">
         <img
@@ -78,14 +80,14 @@
             <i class="fa-solid fas fa-arrow-alt-circle-right"></i></a
         ></p>
         <div class="testimonial">
-          <img src="images/icon-quotes.svg" alt="Quotes icon" />
-          <p
+          <i class="fa-solid fas fas fa-quote-left"></i>
+          <blockquote
             >Fylo has improved our team productivity by an order of magnitude.
             Since making the switch our team has become a well-oiled
-            collaboration machine.</p
+            collaboration machine.</blockquote
           >
-          <img src="images/avatar-testimonial.jpg" alt="Kyle's avator image" />
-          <h4>Kyle Burton<br /><span>Founder & CEO, Huddle</span></h4>
+          <img src="images/avatar-testimonial.jpg" alt="Kyle Burton" />
+          <h4>Kyle Burton<span>Founder & CEO, Huddle</span></h4>
         </div>
       </section>
       <section id="register" class="container">
@@ -97,7 +99,7 @@
             would be happy to help you.</p
           >
         </div>
-        <div>
+        <form action="" id="form-2">
           <label for="email">
             <input
               type="email"
@@ -106,20 +108,22 @@
               placeholder="example@example.com"
             />
           </label>
-          <button>Get Started For Free</button>
-        </div>
+          <button type="button">Get Started For Free</button>
+        </form>
       </section>
       <footer id="pmr-ftr" class="container">
         <div class="contact">
-          <img src="images/logo-white.svg" alt="Main logo" />
-          <a href="#"
-            ><i class="fa-solid fas fas fas fa-phone"></i> Phone:
-            +1-543-123-4567</a
-          >
-          <a href="#"
-            ><i class="fa-solid fas far fas fa-envelope"></i>
-            example@fylo.com</a
-          >
+          <img src="images/logo-white.svg" alt="Fylo logo" />
+          <address>
+            <a href="#"
+              ><i class="fa-solid fas fas fas fa-phone"></i> Phone:
+              +1-543-123-4567</a
+            >
+            <a href="#"
+              ><i class="fa-solid fas far fas fa-envelope"></i>
+              example@fylo.com</a
+            >
+          </address>
         </div>
         <div class="address">
           <p><a href="#">About Us</a></p>
@@ -133,10 +137,26 @@
           <p><a href="#">Privacy</a></p>
         </div>
         <div class="social-icons"
-          ><i class="fa-brand fab fa-facebook-f"></i>
-          <i class="fa-brand fab fa-twitter"></i>
-          <i class="fa-brand fab fa-instagram"></i>
+          ><ul>
+            <li><i class="fa-brand fab fa-facebook-f"></i></li>
+            <li><i class="fa-brand fab fa-twitter"></i></li>
+            <li><i class="fa-brand fab fa-instagram"></i></li>
+          </ul>
         </div>
+        <!-- <ul class="social-icons">
+          <li class=""
+            ><a href="#" aria-label="Visit our facebook">
+              <i class="fa-brand fab fa-facebook-f" aria-hidden="true"></i></a
+          ></li>
+          <li class=""
+            ><a href="#" aria-label="Visit our twitter">
+              <i class="fa-brand fab fa-twitter" aria-hidden="true"></i></a
+          ></li>
+          <li class=""
+            ><a href="#" aria-label="Visit our instagram">
+              <i class="fa-brand fab fa-instagram" aria-hidden="true"></i></a
+          ></li>
+        </ul> -->
       </footer>
     </main>
   </body>

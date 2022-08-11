@@ -43,6 +43,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  min-height: 100vh;
 }
 
 .container {
@@ -121,16 +122,14 @@ body {
   color: var(--ftr-bg);
   opacity: 0.8;
   font-weight: 400;
+  display: block;
 }
 
 #cnt-intro .testimonial img {
-  width: 32px;
-  border-radius: 16px;
-}
-
-#cnt-intro .testimonial img:last-of-type {
   float: left;
   margin: 10px 10px 0 0;
+  width: 32px;
+  border-radius: 16px;
 }
 
 #register {
@@ -214,6 +213,7 @@ a:hover {
   ===================
 */
 #pmr-ftr {
+  font-size: small;
   background: var(--ftr-bg);
   display: flex;
   flex-direction: column;
@@ -226,7 +226,7 @@ a:hover {
 }
 
 #pmr-ftr .contact img {
-  width: 50%;
+  width: 30%;
   display: block;
   margin-bottom: 10px;
   cursor: pointer;
@@ -242,6 +242,14 @@ a:hover {
 
 #pmr-ftr .social-icons {
   text-align: center;
+}
+
+#pmr-ftr .social-icons ul {
+  list-style: none;
+}
+
+#pmr-ftr .social-icons ul li {
+  display: inline-block;
 }
 
 #pmr-ftr .social-icons .fab {
@@ -372,21 +380,22 @@ a:hover {
     margin: 40px 0 0 0;
   }
 
-  #register div {
-    display: inline-block;
-    width: 45%;
+  #register {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 
-  #register div:last-of-type {
-    margin-left: 50px;
-  }
-
-  #register input {
+  #form-2 input {
     width: 100%;
   }
 
-  #register button {
-    width: 70%;
+  #form-2 button {
+    width: 60%;
     margin: 0;
   }
 
