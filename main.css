@@ -100,6 +100,7 @@ body {
 }
 
 #cnt-intro .testimonial {
+  text-align: left;
   background: white;
   padding: 20px;
   margin: 40px 20px;
@@ -109,20 +110,20 @@ body {
 }
 
 #cnt-intro .testimonial p {
-  text-align: left;
   margin: 0 0 10px 0;
 }
 
-#cnt-intro .testimonial h4 {
+#cnt-intro .testimonial h3 {
   text-align: left;
   margin-bottom: 0;
 }
 
-#cnt-intro .testimonial h4 span {
+#cnt-intro .testimonial h3 span {
   color: var(--ftr-bg);
   opacity: 0.8;
   font-weight: 400;
   display: block;
+  margin-top: -10px;
 }
 
 #cnt-intro .testimonial img {
@@ -282,6 +283,10 @@ a:hover {
     margin: 10px;
   }
 
+  #cnt-intro .testimonial img {
+    margin-top: 20px;
+  }
+
   #pmr-ftr {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -390,11 +395,11 @@ a:hover {
     gap: 20px;
   }
 
-  #form-2 input {
+  #register input {
     width: 100%;
   }
 
-  #form-2 button {
+  #register button {
     width: 60%;
     margin: 0;
   }
